@@ -1,0 +1,217 @@
+/* para designar un selector universal se un el "* + {lo que vaya a modificar}"*/
+/* Selector --- de un elemento*/
+/* Selector --- de un elemento con un atributo especifico ( en css "img [src]")*/
+/* Selector "class"--- para que pueda ser utilizada por multiples elementos(en ccs ".nombreclass")*/
+/* Selector "id"--- para que pueda ser utilizada por UN SOLO elemento (en ccs "#nombreid")*/
+
+
+/*NORMALIZAR*/ 
+* { /*Para normalizar (decir que todos lo elementos de mi pag. Web tendran: )*/ 
+
+
+    box-sizing: border-box; /* BOX SIZING???*/
+
+    margin: 0;
+    padding: 0;
+
+    /*border: 1px solid green;*/
+    /*ancho, tipo, color | no olvidar los ":" en la sintaxis*/  
+
+}
+
+
+
+/*para el ver limite de etiqueta o elemento {*/
+
+    /*border: 2px solid black
+    ancho, tipo, color | no olvidar los ":" en la sintaxis*/
+
+
+/* Selector --- para modificar solo un elemento(body en estte caso)*/
+body {
+
+    text-align: center;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+a {    /* Recordar ( "a"=es para elemento. ".a"=es para una class que se llame 'a')*/
+
+    color: white;
+    text-decoration: none; /*Para que no se vea el subrayado de cada enlace*/
+
+}
+
+ul {   
+
+    list-style: none; /*para quitale los estilos por defectos que pueda tener*/
+
+}
+
+
+
+/*DIV CONTENEDOR*/
+.contenedor {
+
+    display: block;
+
+    /*Investigar que es y como funciona px (y tamaño visual "em, %, ect")*/
+    width: 200vh; /*No va a abarcar todo, solo el 90%*/
+    /*height: 2000px;     Para el alto*/ 
+    background-color: rgb(113, 191, 194);
+    margin: 20px auto;
+    /*padding: auto; ----Espacio hacia dentro-- segun herramienta para desarrolladores es INVALIDA ESTA PROPIEDAD ?*/ 
+    border: 1px solid black;
+
+}
+
+
+
+/*CABECERA*/
+.cabecera {
+
+    display: flex; /*PROPIEDAD FLEXBOX?  . Segunfast: permite distribuir los elementos unos al lado del otro*/
+
+    margin: 30px 30px;
+
+    justify-content: space-between; /*van a estar utilizando todo el ancho disponible. (main axis =eje x)*/ 
+    align-items: center; /*(cross axis =eje y)*/
+    height: 60px;
+    
+
+}
+
+
+.titulo {
+
+    
+    display:block;
+
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+    
+}
+
+.cajaimagen { 
+    flex: 1; /*FLEX?????*/
+
+}
+
+
+
+.imagentitulo { /* Selector "class"--- para que pueda ser utilizada por multiples elementos*/
+
+    width: 100px;
+
+}
+
+
+
+
+/*NAVIGATION*/
+.barranavegacion {
+
+    background-color: #ccc;
+
+}
+
+
+.barranavegacion li {
+
+    list-style: none;
+    padding: 4px;
+    margin: 4px;
+    display: inline-block;
+
+    
+    font: bold 12px verdana;
+
+}
+
+.barranavegacion li a  {
+
+color: #000 ;
+
+}
+
+
+
+/*Div Publicacion*/
+.divpublicacion {
+
+display: flex;
+flex-direction: row; /*Por defecto */
+
+/*se usa "content" cuando hay varios elementos en el eje. "item" cuando hay solo 1*/
+
+/*Para main axis*/
+justify-content: space-evenly;/*evenly hace que el space sea proporcional en todas direcciones, indiferentemente del margen de los items*/
+
+
+/*Para cross axis*/
+align-items: stretch;
+
+
+
+
+
+height: 300px;
+
+}
+
+
+/*SECTION*/
+.contenidoprincipal {
+
+    
+    margin: 20px;
+    width: 75%; 
+    
+   
+
+}
+
+
+article {
+
+    padding-bottom: 20px;
+    
+}
+
+.subtitulo {
+    font: bold 15px sans-serif;
+
+}
+
+
+
+/*ASIDE*/
+.barralateral {
+
+
+
+    margin: 20px;
+
+
+    width:20%; 
+    
+    
+
+
+}
+
+
+/*FOOTER*/
+.pie {
+
+clear:both;  
+
+
+}
