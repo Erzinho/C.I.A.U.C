@@ -1,3 +1,4 @@
+/* buscar (que es un template?? "Programador x")*/
 /* para designar un selector universal se un el "* + {lo que vaya a modificar}"*/
 /* Selector --- de un elemento*/
 /* Selector --- de un elemento con un atributo especifico ( en css "img [src]")*/
@@ -46,6 +47,8 @@ a {    /* Recordar ( "a"=es para elemento. ".a"=es para una class que se llame '
 
 ul {   
 
+
+    /*con DISPLAY Predeterminado (Cual es el predeterminado?? xD)*/
     list-style: none; /*para quitale los estilos por defectos que pueda tener*/
 
 }
@@ -135,6 +138,10 @@ ul {
 
 }
 
+
+
+
+/*FAVOR AGREGAR HOVER-BOTOM LINE*/
 .barranavegacion li a  {
 
 color: #000 ;
@@ -152,17 +159,17 @@ flex-direction: row; /*Por defecto */
 /*se usa "content" cuando hay varios elementos en el eje. "item" cuando hay solo 1*/
 
 /*Para main axis*/
-justify-content: space-evenly;/*evenly hace que el space sea proporcional en todas direcciones, indiferentemente del margen de los items*/
+justify-content: space-evenly; /*evenly hace que el space sea proporcional en todas direcciones, indiferentemente del margen de los items*/
 
 
 /*Para cross axis*/
-align-items: stretch;
+align-items: stretch; /*que hace stretch???*/
 
 
 
 
 
-height: 300px;
+/*NOTA: al colocarle "height" (alto) lo predefino Fijo, si los item hijos exceden de ese tamaño, se saldran de ese contenedor, al no hacerlo el tamaño de los hijos amplian ese contenedor, ejemp: el lorem. (indiferente para flex o block)*/
 
 }
 
