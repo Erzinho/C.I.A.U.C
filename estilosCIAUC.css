@@ -1,3 +1,5 @@
+/*METODOLOGIA BEM*/
+
 /* buscar (que es un template?? "Programador x")*/
 /* para designar un selector universal se un el "* + {lo que vaya a modificar}"*/
 /* Selector --- de un elemento*/
@@ -10,6 +12,7 @@
 * { /*Para normalizar (decir que todos lo elementos de mi pag. Web tendran: )*/ 
 
 
+    
     box-sizing: border-box; /* BOX SIZING???*/
 
     margin: 0;
@@ -19,9 +22,6 @@
     /*ancho, tipo, color | no olvidar los ":" en la sintaxis*/  
 
 }
-
-
-
 /*para el ver limite de etiqueta o elemento {*/
 
     /*border: 2px solid black
@@ -31,42 +31,46 @@
 /* Selector --- para modificar solo un elemento(body en estte caso)*/
 body {
 
+
     text-align: center;
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
-
 a {    /* Recordar ( "a"=es para elemento. ".a"=es para una class que se llame 'a')*/
 
-    color: white;
+    
     text-decoration: none; /*Para que no se vea el subrayado de cada enlace*/
 
 }
 
-ul {   
-
+ul {
 
     /*con DISPLAY Predeterminado (Cual es el predeterminado?? xD)*/
+    display: flex;
+    justify-content:space-evenly;
+
+
     list-style: none; /*para quitale los estilos por defectos que pueda tener*/
 
+
+
 }
-
-
 
 /*DIV CONTENEDOR*/
 .contenedor {
 
-    display: block;
-
+    /*display: block; --- por defecto*/
     /*Investigar que es y como funciona px (y tamaño visual "em, %, ect")*/
-    width: 200vh; /*No va a abarcar todo, solo el 90%*/
+    width: 90%; /*No va a abarcar todo, solo el 90% (ancho)*/
     /*height: 2000px;     Para el alto*/ 
     background-color: rgb(113, 191, 194);
     margin: 20px auto;
     /*padding: auto; ----Espacio hacia dentro-- segun herramienta para desarrolladores es INVALIDA ESTA PROPIEDAD ?*/ 
-    border: 1px solid black;
+    border: 3px solid #ccc;
+
+    
 
 }
 
@@ -107,21 +111,28 @@ ul {
 
 }
 
-
-
 .imagentitulo { /* Selector "class"--- para que pueda ser utilizada por multiples elementos*/
 
     width: 100px;
 
 }
 
-
-
-
 /*NAVIGATION*/
 .barranavegacion {
 
+
+
     background-color: #ccc;
+
+}
+
+
+.barranavegacion li a:hover{
+
+    color: #333;
+    border-bottom: 3px solid #555;
+
+
 
 }
 
@@ -138,16 +149,17 @@ ul {
 
 }
 
-
-
-
 /*FAVOR AGREGAR HOVER-BOTOM LINE*/
 .barranavegacion li a  {
 
-color: #000 ;
+    padding-bottom: 7px;
+
+
+
+    color: #000 ;
+
 
 }
-
 
 
 /*Div Publicacion*/
@@ -192,6 +204,15 @@ article {
     
 }
 
+
+.parrafo {
+
+margin-top: 15px;
+margin-left: 15px;
+text-align: justify;
+    
+}
+
 .subtitulo {
     font: bold 15px sans-serif;
 
@@ -217,8 +238,10 @@ article {
 
 /*FOOTER*/
 .pie {
+    
 
-clear:both;  
+    padding-top: 11px;
+    padding-bottom: 11px;
 
 
 }
