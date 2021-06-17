@@ -1,5 +1,5 @@
-/*METODOLOGIA BEM*/
-
+/*FAVOR METODOLOGIA BEM*/
+/*FAVOR HOVER a BLOCKQUOTE*/
 /* buscar (que es un template?? "Programador x")*/
 /* para designar un selector universal se un el "* + {lo que vaya a modificar}"*/
 /* Selector --- de un elemento*/
@@ -114,6 +114,10 @@ ul {
 .imagentitulo { /* Selector "class"--- para que pueda ser utilizada por multiples elementos*/
 
     width: 100px;
+    border-radius: 6px;
+    border: 4px double #666;
+    
+
 
 }
 
@@ -129,8 +133,8 @@ ul {
 
 .barranavegacion li a:hover{
 
-    color: #333;
-    border-bottom: 3px solid #555;
+    color: #444;
+    border-bottom: 3px solid #444;
 
 
 
@@ -149,7 +153,7 @@ ul {
 
 }
 
-/*FAVOR AGREGAR HOVER-BOTOM LINE*/
+
 .barranavegacion li a  {
 
     padding-bottom: 7px;
