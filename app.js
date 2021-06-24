@@ -29,7 +29,13 @@ else if (nombre == "Indra" || nombre ==  "indra" || nombre == "INDRA") {
 
     alert (`Bienvenida Amore. Que tengas un lindo dia!!`)
 
-}    
+}  
+
+else if (nombre == "RICHARD" || nombre ==  "Richard" || nombre == "richard") {
+
+    alert (`Bienvenido hermanito. Gracias por estar alli... y por todo. Cuidate y exitos donde quiera que estes!!`)
+
+}
 
 else if (nombre == "johan" || nombre ==  "Johan" || nombre == "JOHAN") {
 
