@@ -53,9 +53,6 @@ ul {
 
 
     list-style: none; /*para quitale los estilos por defectos que pueda tener*/
-
-
-
 }
 
 /*DIV CONTENEDOR*/
@@ -63,17 +60,13 @@ ul {
 
     /*display: block; --- por defecto*/
     /*Investigar que es y como funciona px (y tamaño visual "em, %, ect")*/
-    width: 90%; /*No va a abarcar todo, solo el 90% (ancho)*/
+    width: 100%; /*No va a abarcar todo, solo el 90% (ancho)*/
     /*height: 2000px;     Para el alto*/ 
     background-color: rgb(113, 191, 194);
     margin: 20px auto;
     /*padding: auto; ----Espacio hacia dentro-- segun herramienta para desarrolladores es INVALIDA ESTA PROPIEDAD ?*/ 
-    border: 3px solid #ccc;
-
-    
-
+    border: 3px solid #ccc; 
 }
-
 
 
 /*CABECERA*/
@@ -86,14 +79,10 @@ ul {
     justify-content: space-between; /*van a estar utilizando todo el ancho disponible. (main axis =eje x)*/ 
     align-items: center; /*(cross axis =eje y)*/
     height: 60px;
-    
-
 }
 
 
 .titulo {
-
-    
     display:block;
 
     font-size: 30px;
@@ -102,30 +91,23 @@ ul {
 
     margin-left: 20px;
     margin-right: 20px;
-
-    
 }
 
 .cajaimagen { 
     flex: 1; /*FLEX?????*/
-
 }
+
 
 .imagentitulo { /* Selector "class"--- para que pueda ser utilizada por multiples elementos*/
 
     width: 100px;
     border-radius: 6px;
     border: 4px double #666;
-    
-
-
 }
+
 
 /*NAVIGATION*/
 .barranavegacion {
-
-
-
     background-color: #ccc;
 
 }
@@ -135,34 +117,22 @@ ul {
 
     color: #444;
     border-bottom: 3px solid #444;
-
-
-
 }
-
 
 .barranavegacion li {
 
     list-style: none;
     padding: 4px;
     margin: 4px;
-    display: inline-block;
-
-    
+    display: inline-block;    
     font: bold 12px verdana;
 
 }
 
-
 .barranavegacion li a  {
 
     padding-bottom: 7px;
-
-
-
     color: #000 ;
-
-
 }
 
 
@@ -177,13 +147,8 @@ flex-direction: row; /*Por defecto */
 /*Para main axis*/
 justify-content: space-evenly; /*evenly hace que el space sea proporcional en todas direcciones, indiferentemente del margen de los items*/
 
-
 /*Para cross axis*/
 align-items: stretch; /*que hace stretch???*/
-
-
-
-
 
 /*NOTA: al colocarle "height" (alto) lo predefino Fijo, si los item hijos exceden de ese tamaño, se saldran de ese contenedor, al no hacerlo el tamaño de los hijos amplian ese contenedor, ejemp: el lorem. (indiferente para flex o block)*/
 
@@ -192,12 +157,9 @@ align-items: stretch; /*que hace stretch???*/
 
 /*SECTION*/
 .contenidoprincipal {
-
     
     margin: 20px;
     width: 75%; 
-    
-   
 
 }
 
@@ -222,30 +184,16 @@ text-align: justify;
 
 }
 
-
-
 /*ASIDE*/
 .barralateral {
-
-
-
     margin: 20px;
-
-
     width:20%; 
-    
-    
-
-
 }
-
 
 /*FOOTER*/
 .pie {
     
-
     padding-top: 11px;
     padding-bottom: 11px;
-
 
 }
